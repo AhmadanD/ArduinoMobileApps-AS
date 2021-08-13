@@ -15,9 +15,7 @@ public class HalamanUtama extends AppCompatActivity {
 
     private FirebaseDatabase database;
     private DatabaseReference refAmonia, refHumidity, refTemperature;
-    private long amonia;
-    private Double humidity, temperature;
-
+    private Double amonia, humidity, temperature;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,11 +27,11 @@ public class HalamanUtama extends AppCompatActivity {
         NumberFormat nm = NumberFormat.getNumberInstance();
 
         database = FirebaseDatabase.getInstance();
-        refAmonia = database.getReference("amonia");
+        refAmonia = database.getReference("Amonia");
         refAmonia.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
-                amonia = dataSnapshot.getValue(Long.class);
+                amonia = dataSnapshot.getValue(Double.class);
                 Log.d("TAG", "Amonia: " + amonia);
                 kadarAmoniakInputText.setText(nm.format(amonia));
             }
@@ -45,7 +43,7 @@ public class HalamanUtama extends AppCompatActivity {
             }
         });
 
-        refHumidity = database.getReference("humidity");
+        refHumidity = database.getReference("Humidity");
         refHumidity.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -61,7 +59,7 @@ public class HalamanUtama extends AppCompatActivity {
             }
         });
 
-        refTemperature = database.getReference("temperature");
+        refTemperature = database.getReference("Temperatur");
         refTemperature.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {

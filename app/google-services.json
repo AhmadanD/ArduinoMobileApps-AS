@@ -1,42 +1,71 @@
 {
   "project_info": {
-    "project_number": "1055722914281",
-    "firebase_url": "https://aplikasiptka-default-rtdb.firebaseio.com",
-    "project_id": "aplikasiptka",
-    "storage_bucket": "aplikasiptka.appspot.com"
+    "project_number": "47760917309",
+    "firebase_url": "https://monitoring-temp-humidity-iot-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "monitoring-temp-humidity-iot",
+    "storage_bucket": "monitoring-temp-humidity-iot.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1055722914281:android:bbe1a222b316b101944b78",
+        "mobilesdk_app_id": "1:47760917309:android:57203a24796d8f7847bb54",
         "android_client_info": {
-          "package_name": "com.example.arduinomobileapps"
+          "package_name": "com.example.PTKA"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1055722914281-edalcuploaapei0i3so60607btdnie5k.apps.googleusercontent.com",
+          "client_id": "47760917309-2oqiuv507jqbso0a29v2cqb89pc4go1r.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.arduinomobileapps",
+            "package_name": "com.example.PTKA",
             "certificate_hash": "d65144997ab65bed2bcf07a0fd9359b88aef745c"
           }
         },
         {
-          "client_id": "1055722914281-ncfrudcffnikhsvc2n9c0f90quaof3a8.apps.googleusercontent.com",
+          "client_id": "47760917309-mss1gb59goai9j4i0mo7cusd54sa8dba.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBQL5fb-Znn7yzKspUYmEqwg_G_M2kJqYY"
+          "current_key": "AIzaSyBpXnG3F1ObPnsqC-N-ecWBpyqPq7ty6ew"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1055722914281-ncfrudcffnikhsvc2n9c0f90quaof3a8.apps.googleusercontent.com",
+              "client_id": "47760917309-mss1gb59goai9j4i0mo7cusd54sa8dba.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47760917309:android:7bfee80c67ce6c8047bb54",
+        "android_client_info": {
+          "package_name": "com.example.arduinomobileapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47760917309-mss1gb59goai9j4i0mo7cusd54sa8dba.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpXnG3F1ObPnsqC-N-ecWBpyqPq7ty6ew"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "47760917309-mss1gb59goai9j4i0mo7cusd54sa8dba.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
