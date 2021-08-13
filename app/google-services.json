@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1055722914281",
+    "firebase_url": "https://aplikasiptka-default-rtdb.firebaseio.com",
+    "project_id": "aplikasiptka",
+    "storage_bucket": "aplikasiptka.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1055722914281:android:bbe1a222b316b101944b78",
+        "android_client_info": {
+          "package_name": "com.example.arduinomobileapps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1055722914281-edalcuploaapei0i3so60607btdnie5k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.arduinomobileapps",
+            "certificate_hash": "d65144997ab65bed2bcf07a0fd9359b88aef745c"
+          }
+        },
+        {
+          "client_id": "1055722914281-ncfrudcffnikhsvc2n9c0f90quaof3a8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQL5fb-Znn7yzKspUYmEqwg_G_M2kJqYY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1055722914281-ncfrudcffnikhsvc2n9c0f90quaof3a8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

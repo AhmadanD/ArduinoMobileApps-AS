@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/orange_ptka"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/judulLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/judulText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:lines="2"
+            android:textAlignment="center"
+            android:text="APLIKASI\nPTKA"
+            android:textSize="20pt"/>
+
+    </LinearLayout>
+
+    <ImageView
+        style="@style/BackGroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/judulLayout"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/tanggalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        app:cardBackgroundColor="@color/blue_ptka"
+        android:layout_below="@+id/judulLayout">
+
+        <TextView
+            android:id="@+id/tanggalText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:text="Minggu, 30 Mei 2021"
+            android:textSize="12pt"/>
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/layoutSuhu"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tanggalLayout">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardSuhuText"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/orange_ptka"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/suhuText"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="Suhu"
+                android:textSize="20sp"
+                android:layout_marginEnd="10dp"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardSuhuInputText"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/orange_ptka"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/suhuInputText"
+                android:background="@color/blue_ptka"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="32"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutKelembaban"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layoutSuhu">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardKelembabanText"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/orange_ptka"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/kelembabanText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="Kelemababan"
+                android:textSize="20sp"
+                android:layout_marginEnd="10dp"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardKelembabanInputText"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/blue_ptka"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/kelembabanInputText"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="20"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutKadarAmoniak"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layoutKelembaban">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardKadarAmoniakText"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/orange_ptka"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/KadarAmoniakText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textAlignment="textStart"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="Kadar Amoniak"
+                android:textSize="20sp"
+                android:layout_marginEnd="10dp"/>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardKadarAmoniakInputText"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/blue_ptka"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/kadarAmoniakInputText"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:text="15"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonData1MingguTerakhir"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/layoutKadarAmoniak"
+        android:text="KLIK UNTUK MELIHAT DATA 1 MINGGU TERAKHIR"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:background="@color/blue_ptka"/>
+
+    <LinearLayout
+        android:id="@+id/layoutLogoDanButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/buttonData1MingguTerakhir">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/logo_pnj"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/matikanSistemText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:text="Matikan Sistem"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonSaatIni"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Saat Ini"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:background="@color/blue_ptka"/>
+
+                <Button
+                    android:id="@+id/buttonSetiapMenit"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Setiap Menit"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:background="@color/blue_ptka"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
